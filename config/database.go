@@ -32,7 +32,6 @@ Loop:
 			"%v:%v@tcp(%s:%v)/%v?charset=utf8mb4&parseTime=True&loc=Local",
 			v["user"], v["password"], v["host"], v["port"], v["db"],
 		)
-		fmt.Println(dsn)
 		db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 		if err != nil {
 			panic("数据库连接失败: " + err.Error())

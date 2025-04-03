@@ -1,7 +1,6 @@
 package config
 
 import (
-	"fmt"
 	"github.com/spf13/viper"
 	"os"
 	"path/filepath"
@@ -20,7 +19,7 @@ func init() {
 		CONF.SetConfigName("dev")
 	}
 	CONF.SetConfigType("yaml")
-	fmt.Println(path)
+	//fmt.Println(path)
 	CONF.AddConfigPath(path)
 	err := CONF.ReadInConfig()
 	if err != nil {
