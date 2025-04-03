@@ -1,0 +1,13 @@
+mysql:
+  default:
+    user: base
+    password: base_password
+    host: 127.0.0.1
+    port: 3306
+    db: base
+  default2:
+    user: base
+    password: base_password
+    host: 127.0.0.1
+    port: 3306
+    db: base
